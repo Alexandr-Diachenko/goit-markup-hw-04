@@ -1,0 +1,468 @@
+:root {
+	--first-color:#757575;
+	--second-color:#212121;
+	--additional-color:#FFFFFF;
+	--accent-color:#2196f3;
+	--logo-color: #000000;
+	--background-color-h-f: #2F303A;
+	--hero-button-hover: #188CE8;
+	--background-color-team: #F5F4FA;
+	--tel-mail-color: rgba(255, 255, 255, 0.6);
+	--header-border-color:#ECECEC;
+	--portfolio-border-color: #EEEEEE;
+	}
+
+	h1,h2,h3,h4,h5,h6,p,ul {
+		margin: 0;
+	}
+	img {
+		display: block;
+		max-width: 100%;
+		height: auto;
+	}
+
+.container {
+	width: 100%;
+	max-width: 1200px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 15px;
+	padding-right: 15px;
+	/* outline: 3px solid red; */
+}
+
+.container-flex {
+display: flex;
+align-items: center;
+}
+
+.section {
+	padding-top: 94px;
+	padding-bottom: 94px;
+}
+
+
+/* -------BODY------- */
+body {
+	color:var(--first-color);
+	font-family: Roboto, sans-serif;
+	background-color: var(--additional-color);
+}
+
+/* -------ШАПКА------- */
+
+.header {
+border: 1px solid var(--header-border-color);
+}
+
+.site-nav {
+	display: flex;
+	padding-left: 0px;
+	margin-left: 93px;
+	
+}
+
+.site-nav-item:not(:last-child) {
+	margin-right: 50px;
+}
+
+.header-nav-link {
+	text-decoration: none;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 1.14;
+	letter-spacing: 0.02em;
+	color:var(--second-color);
+
+	display: block;
+	padding-top: 32px;
+	padding-bottom: 32px;
+}
+
+.header-nav-link:hover {
+	color: var(--accent-color);
+}
+
+.header-nav-link:focus {
+	color: var(--accent-color);
+	background-color: var(--additional-color);
+}
+
+.current {
+	color: var(--accent-color);
+}
+
+/* -------НАВИГАЦИЯ-КОНТАКТЫ------- */
+.cont-nav {
+	display: flex;
+	padding-left: 0px;
+	margin-left: auto;
+
+}
+
+.cont-nav-item:not(:last-child) {
+	margin-right: 50px;
+}
+
+.nav-contact {
+	text-decoration: none;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 1.14;
+	letter-spacing: 0.02em;
+	color:var(--first-color);
+
+	display: block;
+	padding-top: 32px;
+	padding-bottom: 32px;
+}
+
+.nav-contact:hover {
+	color: var(--accent-color);
+}
+.nav-contact:focus {
+	color: var(--accent-color);
+	background-color: var(--additional-color);
+}
+
+
+.logo {
+	color: var(--accent-color);
+	text-decoration: none;
+	font-family: Raleway, sans-serif;
+	font-weight: 700;
+	font-size: 26px;
+	line-height: 1.19;
+	letter-spacing: 0.03em;
+	display: block;
+
+	margin-left: 0px;
+	padding-top: 24px;
+	padding-bottom: 25px;
+}
+.logo-black {
+	color: var(--logo-color);
+}
+.logo:focus {
+	color: var(--accent-color);
+	background-color: var(--additional-color);
+}
+
+
+/* -------ГЕРОЙ------- */
+.hero {
+	background-color: var(--background-color-h-f);
+	padding: 200px 0px;
+	text-align: center;
+
+}
+.hero-title {
+	font-weight: 900;
+	font-size: 44px;
+	line-height: 1.36;
+	letter-spacing: 0.06em;
+	text-transform: uppercase;
+	color: var(--additional-color);
+
+	width: 696px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 30px;
+
+}
+.hero-button {
+	background-color: var(--accent-color);
+	font-family: 'Roboto',sans-serif;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 1.9;
+	align-items: center;
+	text-align: center;
+	letter-spacing: 0.06em;
+	cursor: pointer;
+	border-radius: 4px;
+	color: var(--additional-color);
+
+	padding: 10px 32px;
+	margin-left: auto;
+	margin-right: auto;
+	min-width: 200px;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+	text-align: center;
+}
+.hero-button:hover {
+	background-color: var(--hero-button-hover);
+}
+/* -------НАШИ ПРИУМУЩЕСТВА------- */
+
+.features-title {
+	font-size: 14px;
+	line-height: 1.14;
+	letter-spacing: 0.03em;
+	text-transform: uppercase;
+	color: var(--second-color);
+	margin-bottom: 10px;
+}
+
+.features-items {
+	padding: 0px;
+}
+
+.features-flex {
+	display: flex;
+	gap: 30px;
+}
+
+.features-content {
+	font-size: 14px;
+	line-height: 1.7;
+	letter-spacing: 0.03em;
+}
+
+
+/* -------ЧЕМ МЫ ЗАНИМАЕМСЯ------- */
+.activity-title {
+	font-size: 36px;
+	line-height: 1.16;
+	letter-spacing: 0.03em;
+	color: var(--second-color);
+
+	text-align: center;
+	margin-bottom: 50px;
+}
+
+.activity-flex {
+display: flex;
+gap: 30px;
+padding-left: 0px;
+}
+
+
+/* -------НАША КОМАНДА------- */
+.team {
+	background-color: var(--background-color-team);
+	
+}
+.team-title {
+	font-size: 36px;
+	line-height: 1.16;
+	letter-spacing: 0.03em;
+	color: var(--second-color);
+
+	text-align: center;
+	margin-bottom: 50px;
+}
+
+.team-item {
+	background-color: var(--additional-color);
+
+	text-align: center;
+	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+	border-radius: 0px 0px 4px 4px;
+}
+
+.team-flex {
+	display: flex;
+	gap: 30px;
+	padding-left: 0px;
+
+}
+
+.team-name {
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 1.18;
+	letter-spacing: 0.03em;
+	color: var(--second-color);
+
+	margin-top: 30px;
+}
+
+.team-job-title {
+	margin-top: 10px;
+	margin-bottom: 30px;
+}
+
+/* -------FOOTER------- */
+.footer {
+	background-color: var(--background-color-h-f);
+	padding-top: 60px;
+	padding-bottom: 60px;
+}
+
+.footer-adress {
+	font-style: normal;
+}
+.footer-list {
+	padding-left: 0px;
+}
+
+.footer-logo {
+	color: var(--additional-color);
+	text-decoration: none;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 700;
+	font-size: 26px;
+	line-height: 1.19;
+	letter-spacing: 0.03em;
+
+	display: inline-block;
+	margin-bottom: 20px;
+}
+
+.footer-logo:focus {
+	color: var(--accent-color);
+	background-color: transparent
+}
+
+
+.logo-blue {
+	color: var(--accent-color);
+}
+
+.adres-link {
+	text-decoration: none;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+	color: var(--additional-color);
+
+	display: inline-block;
+	margin-bottom: 9px;
+}
+
+.adres-link:focus {
+	color: var(--accent-color);
+	background-color: transparent
+}
+
+
+.footer-tel, .footer-mail {
+	text-decoration: none;
+	font-size: 14px;
+	line-height: 1.7;
+	letter-spacing: 0.03em;
+	color: var(--tel-mail-color);
+}
+
+.footer-mail:focus {
+	color: var(--accent-color);
+	background-color: transparent
+}
+
+.footer-tel:focus {
+	color: var(--accent-color);
+	background-color: transparent
+}
+
+
+.footer-mail {
+	display: inline-block;
+	margin-bottom: 9px;
+}
+
+.footer-list:hover {
+	color: var(--accent-color);
+}
+/* -------ПОРТФОЛИО СПИСОК КНОПОК------- */
+
+.portfolio-btn {
+background-color: var(--background-color-team);
+font-weight: 500;
+width: 130px;
+font-size: 16px;
+line-height: 1.6;
+letter-spacing: 0.03em;
+cursor: pointer;
+border: 0px;
+border-radius: 4px;
+color: var(--second-color);
+
+padding: 6px 22px;
+}
+
+.portfolio-btn-flex {
+	display: flex;
+	gap: 8px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 50px ;
+	justify-content: center;
+	padding: 0px;
+}
+
+.accent-btn {
+	background-color: var(--accent-color);
+	width: 73px
+}
+
+.portfolio-btn
+:hover,
+:focus {
+	background-color: var(--accent-color);
+	color: var(--additional-color);
+}
+
+/* -------НАШИ РАБОТЫ------- */
+
+.work-list-flex {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 0px;
+	gap: 30px;
+}
+
+.works-title {
+font-size: 18px;
+line-height: 2;
+letter-spacing: 0.06em;
+color: var(--second-color);
+margin-left: 24px;
+}
+
+.work-imeges {
+margin-bottom: 10px;
+}
+
+.works-text {
+	font-size: 16px;
+	line-height: 1.9;
+	letter-spacing: 0.03em;
+	margin-left: 24px;
+	margin-bottom: 20px;
+}
+.work-item {
+background: var(--additional-color);
+border: 1px solid var(--portfolio-border-color);
+
+flex-basis: calc((100% - 60px) / 3);
+}
+
+/* скрывает заголовок */
+.visually-hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+	white-space: nowrap;
+	clip-path: inset(100%);
+	clip: rect(0 0 0 0);
+	overflow: hidden;
+}
+/* убирает точки в списках */
+.list {
+	list-style: none;
+}
+
+
+
+/* основной цвет текста # 757575 */
+/* дополнительный цвет текста # 212121 */
+/* цвет текста заголовка # FFFFFF */
+/* акцент # 2196F3 */
+/* цвет лого шапка # 2196F3 + # 000000  */
+/* цвет лого подвал # 2196F3 + # FFFFFF  */
+/* цвет фона шапки #FFFFFF  */
+/* hover кнопки "заказать услуги" # 188CE8*/
