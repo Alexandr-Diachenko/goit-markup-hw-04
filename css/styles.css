@@ -92,7 +92,8 @@ border: 1px solid var(--header-border-color);
 
 .header-nav-link:focus {
 	color: var(--accent-color);
-	background-color: var(--additional-color);
+	background-color: transparent;
+	box-shadow: none;	
 }
 
 .current {
@@ -136,6 +137,7 @@ border: 1px solid var(--header-border-color);
 	color: var(--accent-color);
 	background-color: var(--additional-color);
 	fill: var(--accent-color);
+	box-shadow: none;
 }
 
 .logo {
@@ -159,6 +161,7 @@ border: 1px solid var(--header-border-color);
 .logo:focus {
 	color: var(--accent-color);
 	background-color: var(--additional-color);
+	box-shadow: none;
 }
 
 
@@ -353,8 +356,14 @@ padding-left: 0px;
 }
 .team-soc-link:hover {
 	fill: var(--additional-color);
-	background-color:var(--accent-color);
+	background-color: var(--accent-color)
 }
+
+.team-soc-link:focus {
+	fill: var(--additional-color);
+	background-color: var(--accent-color)
+}
+
 
 
 /* -------CLIENTS------- */
@@ -378,7 +387,6 @@ margin-bottom: 50px;
 	width: 170px;
 	height: 92px;
 	border: 1px solid #AFB1B8;
-    border-radius: 4px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -392,7 +400,11 @@ margin-bottom: 50px;
 
 .clients-link {
 	display: flex;
-	padding: 16px 32px;
+	border-radius: 4px;
+	width: 100%;
+	height: 100%;
+	align-items: center;
+	justify-content: center;	
 }
 
 
@@ -499,6 +511,7 @@ margin-bottom: 50px;
 }
 .footer-flex {
 	display: flex;
+	align-items: baseline;
 }
 
 .footer-box-adress {
@@ -523,6 +536,8 @@ width: 231px;
 	margin-bottom: 20px;
 	font-weight: 700;
 	line-height: 1.14;
+	letter-spacing: 0.03em;
+	text-transform: uppercase;
 	color: var(--additional-color);
 	
 	
@@ -545,7 +560,7 @@ width: 231px;
 	align-items: center;
 	fill: var(--additional-color);
 	background-color: var(--color-f-i);
-	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+	/* filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)); */
 }
 .footer-soc-link:hover {
 	fill: var(--additional-color);
@@ -556,7 +571,6 @@ width: 231px;
 .portfolio-btn {
 background-color: var(--background-color-team);
 font-weight: 500;
-width: 130px;
 font-size: 16px;
 line-height: 1.6;
 letter-spacing: 0.03em;
@@ -612,6 +626,18 @@ padding: 6px 22px;
 .work-link {
 	text-decoration: none;
 	color: currentColor;
+	display: block;
+}
+
+.work-link:hover {
+	box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.work-link:focus {
+	box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+	background-color: transparent;
 }
 
 .works-title {
@@ -645,13 +671,6 @@ background: var(--additional-color);
 
 flex-basis: calc((100% - 2 * 30px) / 3);
 }
-
-.work-item:hover, :focus {
-	box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
-}
-
-
 
 
 /* скрывает заголовок */
